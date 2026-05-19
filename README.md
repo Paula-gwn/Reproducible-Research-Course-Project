@@ -19,25 +19,25 @@ A regression analysis is then conducted using log-transformed salary as the depe
 
 Run the following commands in your terminal:
 
+
+
+1. Clone repository
+
 git clone https://github.com/claradilara/Reprodicable-Research-Course-Project
 
-# 1. Clone repository
-
-git clone https://github.com/claradilara/Reprodicable-Research-Course-Project
-
-# 2. Enter repository
+2. Enter repository
 
 cd Reprodicable-Research-Course-Project
 
-# 3. Check R version
+3. Check R version
 
 dir "C:\Program Files\R"
 
-# 4. Open R
+4. Open R
 
 & "C:\Program Files\R\R-4.6.0\bin\R.exe"
 
-# 5. Inside R install packages
+5. Inside R install packages
 
 options(repos = c(CRAN = "https://cloud.r-project.org"))
 
@@ -51,12 +51,12 @@ install.packages(c(
 "ggplot2"
 ))
 
-# 6. Quit R
+6. Quit R
 
 q()
 n
 
-# 7. Run script
+7. Run script
 
 & "C:\Program Files\R\R-4.6.0\bin\Rscript.exe" "data_science_salaries_report.R"
 
