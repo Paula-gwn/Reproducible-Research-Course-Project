@@ -21,16 +21,48 @@ Run the following commands in your terminal:
 
 git clone https://github.com/claradilara/Reprodicable-Research-Course-Project
 
-After that, you will get all the necessary files for the project. Change your current directory to the directory, where you cloned the repository into. 
+# 1. Clone repository
 
-Check your directory by running this command:
+git clone https://github.com/claradilara/Reprodicable-Research-Course-Project
 
-pwd
+# 2. Enter repository
 
-After you are certain of the directory, You can run all the necessary commands you need. 
+cd Reprodicable-Research-Course-Project
+
+# 3. Check R version
+
+dir "C:\Program Files\R"
+
+# 4. Open R
+
+& "C:\Program Files\R\R-4.6.0\bin\R.exe"
+
+# 5. Inside R install packages
+
+options(repos = c(CRAN = "https://cloud.r-project.org"))
+
+install.packages(c(
+"tidyverse",
+"fixest",
+"modelsummary",
+"scales",
+"stringi",
+"stringr",
+"ggplot2"
+))
+
+# 6. Quit R
+
+q()
+n
+
+# 7. Run script
+
+& "C:\Program Files\R\R-4.6.0\bin\Rscript.exe" "data_science_salaries_report.R"
+
 
 **How to test the project**
 
-After you got the files, you can open the data_science_salaries_report.Rmd to run the program. You will need Rstudio and the following libraries; "tidyverse", "fixest", "modelsummary", "scales" to run it. Libraries can be installed automatically bu running the code inside the project. 
+After you got the files, you can open the data_science_salaries_report.R to run the program. You will need Rstudio and the following libraries; "tidyverse", "fixest", "modelsummary", "scales" to run it. Libraries can be installed.
 
 If you want to get a ready page with all results and pieces of code, then open the data_science_salaries_report.html using an internet browser, like Google Chrome or Mozilla Firefox or etc. 
